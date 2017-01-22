@@ -1,16 +1,15 @@
-<!doctype html>
-<html>
-<head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/styles.css" rel="stylesheet">
-    <title>Application Form</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}
+Application Form
+{% endblock %}
+
+
+{% block body %}
     <div class="uprow">
         <div class="col-xs-offset-2 col-xs-8 col-md-offset-4 col-md-4 text-center">
         <h1>Apply Now!</h1>
         <div id="instruction">
-            <p>Please fill in your first name, last name, salary requirement(number only) and select one of job title you want to apply for.</h5>
+            <p>Please fill in your first name, last name, salary requirement(number only) and select one of job title you want to apply for.
             We are excited that you are interested in us!</p>
         </div>
         </div>
@@ -45,5 +44,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}

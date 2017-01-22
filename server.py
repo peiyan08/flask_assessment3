@@ -28,7 +28,11 @@ def application_succss():
     salary = float(request.form.get("salary"))
     job = request.form.get("jobtype")
     new_applicant = Applicants(fname, lname, salary, job)
-
+    """I know here that i could have just passed in fname, lname, 
+    salary and job into the render_template. However I do believe it is import
+    to create a class that every applicant is a instance of applicants, so later
+    we can store those applications. Also, I wan to practice use class.
+    """
     return render_template("application-response.html", new_applicant=new_applicant)
     
 
