@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/styles.css" rel="stylesheet">
+    <title>Application Form</title>
+</head>
+<body>
+    <div class="uprow">
+        <div class="col-xs-offset-2 col-xs-8 col-md-offset-4 col-md-4 text-center">
+        <h1>Apply Now!</h1>
+        <div id="instruction">
+            <p>Please fill in your first name, last name, salary requirement(number only) and select one of job title you want to apply for.</h5>
+            We are excited that you are interested in us!</p>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="downrow">
+            <div class="col-xs-offset-2 col-xs-8 col-md-offset-4 col-md-4 text-center">
+            <form action="/application-success" method="POST">
+                <br>
+                <label for="fname">First Name: </label>
+                <input id="fname" type="text" name=fname required>
+                <br>
+                <br>
+                <label for="lname">Last Name: </label>
+                <input id="lname" type="text" name=lname required>
+                <br>
+                <br>
+                <label for="salary">Desire Salary: </label>
+                <input id="salary" type="number" name=salary required>
+                <br>
+                <br>
+                <label for="jobtype">Job Applying: </label> 
+                <select name="jobtype" required>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="QA Engineer">QA Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" name="submit" value="Submit Applicaiton">
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

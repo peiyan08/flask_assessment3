@@ -1,0 +1,19 @@
+/* Your CSS goes here */
+input {
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+#lname {
+    font-weight: bold
+}
+
+#instruction {
+    border-radius: 3px;
+    border: 3px solid black;
+}
+
+select {
+    background-color: yellow;
+    border: 2px solid black;
+}
